@@ -55,11 +55,11 @@ class plgContentSpThumbnail extends JPlugin
         return true;
 	}
 
-        function onBeforeRender() {            
-			$p = array('content'=>'<img id="modalImage" src="" class="img-responsive" />','name'=>'thumbModal');
-			JHtml::_('bootstrap.modal',$p);
-            
-            JHtml::_('jquery.framework');
+    function onBeforeRender() {
+        $titletag = $this->params->get('titletag','h5');
+        $p = array('content'=>'<img id="modalImage" src="" class="img-responsive" />','name'=>'thumbModal','titletag'=>$titletag);
+        JHtml::_('bootstrap.modal',$p);
+        JHtml::_('jquery.framework');
         //We oparate with global var imgThumbClass
         $class = $this->params->get('class');
 		$pluginUrl = JURI::base(true) . '/plugins/content/spthumbnail/';

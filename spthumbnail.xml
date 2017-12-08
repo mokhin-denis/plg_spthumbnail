@@ -9,10 +9,11 @@
 	<copyright>SP CYEND - All rights reserved.</copyright>
     <license>GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html</license>
 	<!--  The version string is recorded in the components table -->
-	<version>3.1.0</version>
+	<version>3.1.1</version>
     <!-- Changes: -->
     <!-- 3.0.1 Joomla 3.0 compatible -->
     <!-- 3.1.0 Bootstrap 3  -->
+    <!-- 3.1.1 Added support for TAG header  -->
     <description>PLG_CONTENT_SPTHUMBNAIL_XML_DESCRIPTION</description>
     <files>
         <filename plugin="spthumbnail">spthumbnail.php</filename>
@@ -46,6 +47,7 @@
                     <option value="2">PLG_CONTENT_SPTHUMBNAIL_ALL_IMAGES</option>
                 </field>
                 <field name="class" type="text" default="" label="PLG_CONTENT_SPTHUMBNAIL_CLASS" description="PLG_CONTENT_SPTHUMBNAIL_CLASS_DESCRIPTION" />
+                <field name="titletag" type="headertag" label="PLG_CONTENT_SPTHUMBNAIL_TITLE_TAG" description="PLG_CONTENT_SPTHUMBNAIL_TITLE_TAG_DESC" default="h5"/>
             </fieldset>
         </fields>
 	</config>
