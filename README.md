@@ -24,7 +24,9 @@ Just install the plugin as any other Joomla extension. Activate it, and define w
 
 ### How to define ###
 Just insert any image in your article, and resize if you want. If you chose to be clickable only for a specific class, just go to image properties and define to the appropriate field the name of the class you defined. For example:
+
 ![](http://cyend.com/extensions/images/stories/extensions/sp-thumbnail/sp-thumbnail-2.jpg)
+
 You can also add additional class names along with the defined separated with space. For example: 'my-class another-class1 another-class2'
 > Tip: It would be for the best to avoid using a class name that is might used someplace in your site, for example 'modal'.
 
