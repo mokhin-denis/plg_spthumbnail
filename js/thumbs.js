@@ -20,8 +20,8 @@ function wrapImages(jQuery) {
 }
 
 jQuery(document).ready(function(){
-    jQuery(document).on('click','.popup',function(){        
-        //console.log(jQuery(this).children('img').attr('src'));
+    jQuery(document).on('click','.popup',function(){
+        jQuery('#thumbModal').children('div').attr('class','modal-dialog').addClass(jQuery(this).children('img').attr('data-modal-dialog-class'));
         jQuery('#modalImage').attr('src',jQuery(this).children('img').attr('src'));
         jQuery('#thumbModalLabel').html(jQuery(this).children('img').attr('alt'));
         jQuery('#thumbModal').modal('show');

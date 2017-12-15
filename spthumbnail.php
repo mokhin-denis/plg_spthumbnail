@@ -57,7 +57,7 @@ class plgContentSpThumbnail extends JPlugin
 
     function onBeforeRender() {
         $titletag = $this->params->get('titletag','h5');
-        $p = array('content'=>'<img id="modalImage" src="" class="img-responsive" />','name'=>'thumbModal','titletag'=>$titletag);
+        $p = array('content'=>'<img id="modalImage" src="" class="img-fluid mx-auto d-block" />','name'=>'thumbModal','titletag'=>$titletag);
         JHtml::_('bootstrap.modal',$p);
         JHtml::_('jquery.framework');
         //We oparate with global var imgThumbClass

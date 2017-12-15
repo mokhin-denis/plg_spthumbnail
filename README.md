@@ -30,6 +30,9 @@ Just insert any image in your article, and resize if you want. If you chose to b
 You can also add additional class names along with the defined separated with space. For example: 'my-class another-class1 another-class2'
 > Tip: It would be for the best to avoid using a class name that is might used someplace in your site, for example 'modal'.
 
+## Modal width ##
+In Bootstrap 4 there are 3 wides of modal: `modal-sm`, `default` and `modal-lg`. By default you do not need to anything. If you want to popup modal in `modal-lg`, put into your `<img/>` tag attribute `data-modal-dialog-class="modal-lg"`. For `modal-sm`: `data-modal-dialog-class="modal-sm"`.
+
 ## Authors ##
 * [SP CYEND](//cyend.com) - *Initial work*
 * [Denis Mokhin](//github.com/mokhin-denis) - *Update for Bootstrap 3 and 4*
