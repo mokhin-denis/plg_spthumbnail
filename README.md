@@ -38,4 +38,4 @@ In Bootstrap 4 there are 3 wides of modal: `modal-sm`, `default` and `modal-lg`.
 * [Denis Mokhin](//github.com/mokhin-denis) - *Update for Bootstrap 3 and 4*
 
 ## License ##
-This project is licensed under the GNU/GPL v3 license. Please visit http://www.gnu.org/licenses/gpl-3.0.html or view [gpl-3.0.txt](gpl-3.0.txt)
+This project is licensed under the GNU/GPL v3 license. Please visit http://www.gnu.org/licenses/gpl-3.0.html or view [LICENSE.txt](LICENSE.txt)

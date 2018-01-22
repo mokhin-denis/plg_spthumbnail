@@ -63,7 +63,7 @@ class plgContentSpThumbnail extends JPlugin
         //We oparate with global var imgThumbClass
         $class = $this->params->get('class');
 		$pluginUrl = JURI::base(true) . '/plugins/content/spthumbnail/';
-		JFactory::getDocument()->addScript($pluginUrl.'js/thumbs.js');
+		JFactory::getDocument()->addScript($pluginUrl.'js/thumbs.min.js');
 		JFactory::getDocument()->addScriptDeclaration("
             var imgThumbClass = '$class';
 			jQuery(document).ready(wrapImages);
