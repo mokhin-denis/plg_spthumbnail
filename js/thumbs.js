@@ -9,21 +9,26 @@
  * JavaScript for Bootstrap 3 support. Install https://github.com/mokhin-denis/bs3-demo/tree/master/plg_system_bootstrap3 before use!
 */
 
-function wrapImages(jQuery) {    
-    //console.log(imgClass);
+function wrapImages(jQuery) {
+    /////////////
+    //bind params
+    var imgThumbClass = imgThumbParams.imgThumbClass;    
+    ////////////
+    
     var idNum = 0;
-    jQuery('.'+imgThumbClass).each(function () {        
+    jQuery('.'+imgThumbClass).find('img').andSelf().each(function () {        
         idNum++;
+        //it maybe be a figure with img as child
         var txtAlt = jQuery(this).attr('alt');
         jQuery(this).wrap('<a class="popup" title="' + txtAlt + '" id="id' + imgThumbClass + idNum + '" href="javascript:void(0);" ></a>');
     });
 }
 
 jQuery(document).ready(function(){
-    jQuery(document).on('click','.popup',function(){
-        jQuery('#thumbModal').children('div').attr('class','modal-dialog').addClass(jQuery(this).children('img').attr('data-modal-dialog-class'));
-        jQuery('#modalImage').attr('src',jQuery(this).children('img').attr('src'));
-        jQuery('#thumbModalLabel').html(jQuery(this).children('img').attr('alt'));        
+    jQuery(document).on('click','.popup',function() {
+        jQuery('#thumbModal').children('div').attr('class','modal-dialog').addClass(jQuery(this).find('img').attr('data-modal-dialog-class'));
+        jQuery('#modalImage').attr('src',jQuery(this).find('img').attr('src'));
+        jQuery('#thumbModalLabel').html(jQuery(this).find('img').attr('alt'));
         jQuery('#thumbModal').modal('show');
     });
 });

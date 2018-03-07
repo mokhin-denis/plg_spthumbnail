@@ -61,11 +61,13 @@ class plgContentSpThumbnail extends JPlugin
         JHtml::_('bootstrap.modal',$p);
         JHtml::_('jquery.framework');
         //We oparate with global var imgThumbClass
-        $class = $this->params->get('class');
+        $class = $this->params->get('class');        
 		$pluginUrl = JURI::base(true) . '/plugins/content/spthumbnail/';
 		JFactory::getDocument()->addScript($pluginUrl.'js/thumbs.min.js');
 		JFactory::getDocument()->addScriptDeclaration("
-            var imgThumbClass = '$class';
+            var imgThumbParams = {
+                imgThumbClass: '$class'
+            };            
 			jQuery(document).ready(wrapImages);
 		");
     }
